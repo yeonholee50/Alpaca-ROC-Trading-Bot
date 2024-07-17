@@ -15,7 +15,7 @@ from datetime import timedelta
 import os.path
 
 key = json.loads(open('AUTH/auth.txt', 'r').read())
-api = alpaca.REST(key['APCA-API-KEY-ID'], key['APCA-API-SECRET-KEY'], base_url='https://api.alpaca.markets', api_version = 'v2')
+api = alpaca.REST(key['PK9FY1YAX7H6WD8I4JAW'], key['47X1iAgtDYZiyJX2krO0dmPXbmj2TtykZexifucS'], base_url='https://api.alpaca.markets', api_version = 'v2')
 tickers = open('AUTH/Tickers.txt', 'r').read()
 tickers = tickers.upper().split()
 global TICKERS 
